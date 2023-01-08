@@ -1,6 +1,14 @@
+// ================================================================================
+//                    Assignment # 03 
+//                    
+//        MEMBERS --->  1-  Ahmed Ayaz
+//                      2-  Muhammad Araib     
+//                      3-  Jawad Ahmed
+// ================================================================================
+
 const express = require("express");
 const dotenv = require("dotenv");
-const { v4: uuidv4 } = require("uuid");
+const { v4: uuidv4 } = require("uuid"); // For Generating ID's
 dotenv.config();
 
 const app = express();
@@ -9,8 +17,8 @@ const PORT = process.env.PORT || 5000;
 
 let users_database = [
   { id: "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed", name: "Ahmed Ayaz", age: 20 },
-  { id: "2b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed", name: "Ahmed Faraz", age: 20 },
-  { id: "3b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed", name: "Rashid", age: 40 },
+  { id: "2b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed", name: "Muhammad Araib", age: 20 },
+  { id: "3b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed", name: "Jawad Ahmed", age: 40 },
 ];
 
 // @route   GET /
